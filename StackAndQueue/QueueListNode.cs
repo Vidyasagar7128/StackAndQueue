@@ -32,6 +32,23 @@ namespace StackAndQueue
             Console.WriteLine(val);
             size++;
         }
+        internal void Dequeue()
+        {
+            if (this.forword == null)
+            {
+                Console.WriteLine("The Queue is empty");
+                return;
+            }
+
+            Node<Gtype> temp = this.forword;
+            this.forword = this.forword.Next;
+
+            if (this.forword == null)
+                this.backword = null;
+
+            Console.WriteLine("Item deleted is {0}", temp.Data);
+            size--;
+        }
         public int Size
         {
             get { return size; }
