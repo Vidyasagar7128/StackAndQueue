@@ -12,6 +12,10 @@ namespace StackAndQueue
             stackListNode.Push(30);
             stackListNode.Push(56);
             stackListNode.Show();
+            stackListNode.Pop();
+            stackListNode.Show();
+            stackListNode.Peek();
+            stackListNode.Show();
         }
     }
 }
