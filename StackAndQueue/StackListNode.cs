@@ -24,12 +24,12 @@ namespace StackAndQueue
         }
         internal void Peek()
         {
-            if (this.top == null)
+            if(this.top == null)
             {
                 Console.WriteLine("Stack is Empty!");
                 return;
             }
-            Console.WriteLine("{0} top of Stack", this.top.Data);
+            Console.WriteLine("{0} top of Stack",this.top.Data);
         }
         internal void Pop()
         {
@@ -43,7 +43,7 @@ namespace StackAndQueue
         }
         internal void IsEmpty()
         {
-            while (this.top != null)
+            while(this.top != null)
             {
                 Peek();
                 Pop();
